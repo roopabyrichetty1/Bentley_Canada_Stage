@@ -87,7 +87,7 @@ namespace TestScript
             {
                 ((IJavaScriptExecutor)driver).ExecuteScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\":\"failed\", \"reason\": \"Header menu item not available \"}}");
             }
-            Assert.AreEqual("Roads and Bridges", output_message);
+            Assert.Equals("Roads and Bridges", output_message);
 
         }
     }

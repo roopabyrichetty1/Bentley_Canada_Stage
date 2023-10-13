@@ -63,7 +63,7 @@ namespace TestScript
             {
                 ((IJavaScriptExecutor)driver).ExecuteScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\":\"failed\", \"reason\": \" Iframe with youtube failed to load!\"}}");
             }
-            Assert.AreEqual(false, iframeexists);
+            Assert.Equals(false, iframeexists);
 
         }
     }

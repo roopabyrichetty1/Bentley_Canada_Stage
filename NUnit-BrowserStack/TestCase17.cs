@@ -36,7 +36,7 @@ namespace TestScript
 
 
                 ((IJavaScriptExecutor)driver).ExecuteScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\":\"passed\", \"reason\": \" " + pageloaded + "\"}}");
-            Assert.AreEqual("complete", checkpageloadstatus);
+            Assert.Equals("complete", checkpageloadstatus);
 
         }
     }

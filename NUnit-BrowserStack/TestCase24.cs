@@ -68,7 +68,7 @@ namespace TestScript
             {
                 ((IJavaScriptExecutor)driver).ExecuteScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\":\"failed\", \"reason\": \" Accessibility Widget functionality failed! \"}}");
             }
-            Assert.AreEqual(true, widget_works);
+            Assert.Equals(true, widget_works);
 
         }
     }

@@ -55,7 +55,7 @@ namespace TestScript
             {
                 ((IJavaScriptExecutor)driver).ExecuteScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\":\"failed\", \"reason\": \"Menu item on header not loaded.\"}}");
             }
-            Assert.AreEqual("Software", output_message);
+            Assert.Equals("Software", output_message);
 
         }
     }

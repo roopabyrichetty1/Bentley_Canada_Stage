@@ -73,7 +73,7 @@ namespace TestScript
             {
                 ((IJavaScriptExecutor)driver).ExecuteScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\":\"failed\", \"reason\": \" Chat failed to load!\"}}");
             }
-            Assert.AreEqual(false, iframeexists);
+            Assert.Equals(false, iframeexists);
 
         }
     }

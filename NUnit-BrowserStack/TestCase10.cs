@@ -60,7 +60,7 @@ namespace TestScript
                 ((IJavaScriptExecutor)driver).ExecuteScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\":\"failed\", \"reason\": \"Scroll to Top functionality does not work.  \"}}");
             }
 
-            Assert.AreEqual(0, offset_Value);
+            Assert.Equals(0, offset_Value);
 
         }
     }

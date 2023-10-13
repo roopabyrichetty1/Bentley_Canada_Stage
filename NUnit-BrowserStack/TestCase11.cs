@@ -43,7 +43,9 @@ namespace TestScript
             {
                 ((IJavaScriptExecutor)driver).ExecuteScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\":\"failed\", \"reason\": \"Header section unavailable \"}}");
             }
-            Assert.AreEqual(true, headerexists);
+            //Assert.AreEqual(true, headerexists);
+
+            Assert.Equals(true, headerexists);
 
         }
     }

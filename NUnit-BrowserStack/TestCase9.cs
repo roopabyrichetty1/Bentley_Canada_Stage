@@ -53,7 +53,7 @@ namespace TestScript
             {
                 ((IJavaScriptExecutor)driver).ExecuteScript(script_message);
             }
-            Assert.AreEqual(true, logoexists);
+            Assert.Equals(true, logoexists);
 
         }
     }
