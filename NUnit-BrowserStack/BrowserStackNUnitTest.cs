@@ -32,8 +32,8 @@ namespace BrowserStack
     }
 
     [TearDown]
-    public void Cleanup()
-    {
+    public void TearDown()
+        {
       driver.Quit();
     }
   }
